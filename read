@@ -1,0 +1,12 @@
+L’administration béninoise des impôts a longtemps été confrontée à la problématique de fausse déclaration des impôts au
+niveau des entreprises. Pour pallier ce problème, elle a mis en place un système de contrôle de facturation à distance
+assorti un modèle de facture dit normalisé. Ce module s’impose à toutes les entreprises ayant un chiffre d’affaire
+annuel d’au moins 50.000.0000 de FCFA.
+Le module en question est une machine communiquant sur le port série et n’interprétant que des commandes en hexadécimal.
+Communiquer donc avec cette machine, nécessite d’utiliser un langage de programmation proche de la machine (langage
+système).
+Dans le contexte de digitalisation actuelle, les solutions basées sur les technologies web dominent le marché. Ceci
+amène donc à conclure que l’intégration de la solution de contrôle des factures serait un peu complexe pour ces
+applications et le changement catégorique d’application de gestion de facturation reviendrait encore plus cher pour les
+entreprises disposant déjà d’applications web.
+Comment donc pouvons-nous faciliter l’intégration du concept de facture normalisée aux applications web ?

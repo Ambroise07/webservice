@@ -1,0 +1,16 @@
+{
+    "name": "gouv/mcf",
+    "description": "Module Electronique de COntrole de Facturation",
+    "require": {
+        "altorouter/altorouter": "^2.0",
+        "filp/whoops": "^2.7",
+        "vlucas/valitron": "^1.4",
+        "fzaninotto/faker": "^1.9",
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "cores/"
+        }
+    }
+}
