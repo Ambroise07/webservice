@@ -15,7 +15,7 @@ class Database
     public function __construct()
     {
         $this->DB_HOST = 'localhost';
-        $this->DB_USER = 'ambroise';
+        $this->DB_USER = 'root';
         $this->DB_PASS = 'root';
         $this->DB_NAME = 'webservice';
         try {

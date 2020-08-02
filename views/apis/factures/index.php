@@ -30,7 +30,7 @@ if(is_int($response)){
             echo Json::message(true,'Numero ifu invalide');
             exit;
         }
-        $token = ApiKey::generate(8).'T'.(new DateTime)->format('YmdHis');
+        $token = $component->generateToken();
         $date = (new DateTime)->format('Y-m-d H:i:s');
         $numOpe = $_POST['OPID'];
         $nomOpe = $_POST['OPNOM'];

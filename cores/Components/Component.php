@@ -2,12 +2,14 @@
 namespace App\Components;
 
 use App\Database;
+use App\Helpers\ApiKey;
 use App\Models\Entreprises;
 use App\Models\Factures;
 use App\Models\MoyenPayements;
 use App\Models\ServeurMcf;
 use App\Models\Taxes;
 use App\Models\TypeFactures;
+use DateTime;
 Use PDO;
 class Component{
     private  $db;
@@ -225,5 +227,9 @@ class Component{
                 ':entreprises_id' => $entreprises_id
             ]
         );
+    }
+
+    public function generateToken(){
+        return ApiKey::generate(8).'T'.(new DateTime)->format('YmdHis');
     }
 }

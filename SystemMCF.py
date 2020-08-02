@@ -6,9 +6,9 @@ class SystemMcf :
 
     domaine = 'http://localhost:8000'
     
-    def __init__(self,apikey,ifu):
+    def __init__(self,apikey):
         self.apikey = apikey
-        self.ifu = ifu   
+        #self.ifu = ifu   
     
     def getRequest(self,url):
         "Envoie les requestes en get au serveur HTTP"
@@ -80,3 +80,10 @@ class SystemMcf :
         """
         url = self.__class__.domaine+'/api/fin-facture/{}/{}'.format(token,self.apikey)
         return self.getRequest(url)
+
+
+P = SystemMcf("AZERTYUIOP12345678")
+data = {
+    'tc':45
+}
+print(P.Commande_2Bh())

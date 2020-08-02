@@ -21,6 +21,7 @@ $router->get('/', 'admins/homes/index')
     ->get('/api/mcf-status/[a:apikey]', 'apis/mcfs/mcfinfo')
     ->get('/api/serveur-status/[a:apikey]', 'apis/mcfs/serveur')
     ->get('/api/entreprise-info/[a:apikey]', 'apis/entreprises/info')
+    
     ->get('/api/sous-total/[a:token]/[a:apikey]', 'apis/factures/sous-total')
     ->get('/api/fin-facture/[a:token]/[a:apikey]', 'apis/factures/fin')
     ->get('/api/affiche-facture/[a:token]/[a:apikey]', 'apis/factures/affiche')

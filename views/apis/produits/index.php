@@ -26,7 +26,7 @@ if(is_int($response)){
            }
             $nom = $_POST['NOM'];
             $description = $_POST['DESC'] ?? '';
-            $tab = $_POST['TAB'] ?? 'null';//Rien à foutre 
+            $tab = $_POST['TAB'] ?? 'null';
             $prix = $_POST['PR'];
             $taxes_id = $taxeId;//TAX
             if(empty($_POST['QT'])){
@@ -56,7 +56,7 @@ if(is_int($response)){
             $data['TS'] = $taxe_spec ;
             echo Json::message(false,null,$data);
             exit;
-       }//Else d somethting
+       }
     }else{
         echo Json::message(true,$factureId);
         exit;
