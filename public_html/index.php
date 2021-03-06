@@ -26,7 +26,7 @@ $router->get('/', 'admins/homes/index')
     ->get('/api/fin-facture/[a:token]/[a:apikey]', 'apis/factures/fin')
     ->get('/api/affiche-facture/[a:token]/[a:apikey]', 'apis/factures/affiche')
 
-
+///api/affiche-facture/BqYVaa1oT20200823162903/AZERTYUIOP12345678
     /* POST METHOD */ 
 
     ->post('/api/nouvelle-facture/[a:apikey]', 'apis/factures/index')//POST METHODE ONLY
